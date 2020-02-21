@@ -5,14 +5,14 @@
 a)
 
 a)  a = 0                     O(1)
-    while (a < n * n * n):    O(n^3)
+    while (a < n * n * n):    O(n^3 / n * n + ( ))
       a = a + n * n             O(1)
 
 the while loop is based on n^3
 'a' doubles with each loop.
 no idea how the maths works.
 
-O(n^2) is my best guess
+O(n) is my best guess
 
 b)
 
@@ -31,9 +31,9 @@ c)  def bunnyEars(bunnies):
       if bunnies == 0:                     O(1)
         return 0                           O(1)
 
-      return 2 + bunnyEars(bunnies-1)      O(1)
+      return 2 + bunnyEars(bunnies-1)      O(n)
 
-O(1)
+O(n)
 
 ## Exercise II
 
